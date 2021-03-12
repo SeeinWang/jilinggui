@@ -41,7 +41,7 @@ class SignIn extends Component {
       return (
         <Container>
           <SignUpForm>
-            <Title>Login</Title>
+            <Title>欢迎来到机灵鬼</Title>
             <Form
               style={{ margin: "0 auto" }}
               name="nest-messages"
@@ -71,10 +71,10 @@ class SignIn extends Component {
                   style={{
                     background: "#FFFFFF 0% 0% no-repeat padding-box",
                     width: 250,
-                    height: 45,
+                    height: 50,
                     borderRadius: 47,
                     textAlign: "center",
-                    font: "bold 28px/33px SF PRO, serif",
+                    font: "bold 28px/33px Open Sans",
                     color: "#1890ff",
                   }}
                 >
@@ -96,18 +96,26 @@ position: absolute;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #f0f0f0;
+background: url("../assets/stars.jpg") no-repeat;
+background-size: cover;
+  background-position: center;
 `;
   
-  const SignUpForm = styled.div`
+const SignUpForm = styled.div`
     text-align: center;
+    padding: 32px 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+    box-sizing: border-box;
+    color: rgb(94, 108, 132);
   `;
   
-  const Title = styled.div`
+const Title = styled.div`
     text-align: center;
-    font: bold 55px/70px SF PRO, serif;
+    font: bold 55px/70px Open Sans;
     letter-spacing: 0px;
-    color: #292929;
+    color: #003d90;
     margin-bottom: 50px;
   `;
   
@@ -118,7 +126,7 @@ background-color: #f0f0f0;
   const Bottom = styled.div`
     margin-top: 20px;
     text-align: center;
-    font: bold 27px/36px SF PRO, serif;
+    font: bold 25px/32px Open Sans;
     letter-spacing: 0px;
     color: #003d90;
     cursor: pointer;
